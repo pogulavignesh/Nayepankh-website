@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NayePankh Foundation | Giving Wings to Dreams</title>
+
+<style>
+:root{
+    --primary:#1708e4;
+    --secondary:#2dc522;
+    --dark:#0f172a;
+    --gray:#333349;
+    --light:#f8fafc;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:system-ui,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.6;
+}
+
+ 
+header{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:white;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:800;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav a:hover{
+    opacity:0.8;
+}
+
+ 
+section{
+    padding:80px 10%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.section-title::after{
+    content:"";
+    width:60px;
+    height:4px;
+    background:var(--primary);
+    display:block;
+    margin-top:8px;
+    border-radius:5px;
+}
+
+
+.hero-container{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    min-height:75vh;
+}
+
+.hero-text,
+.hero-image{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero-text span{
+    color:var(--primary);
+}
+
+.hero-text p{
+    color:var(--gray);
+    margin-bottom:30px;
+    font-size:1.1rem;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+ 
+.btn{
+    display:inline-block;
+    background:var(--primary);
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0369a1;
+    transform:translateY(-3px);
+}
+
+ 
+.grid-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    flex:1 1 300px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-img-holder{
+    height:200px;
+}
+
+.card-img-holder img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:var(--gray);
+}
+
+ 
+.impact-panel{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:white;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.stats-row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:40px;
+    margin-top:30px;
+}
+
+.stat-item{
+    flex:1 1 200px;
+}
+
+.stat-item h3{
+    font-size:2.8rem;
+}
+
+ 
+.contact-box{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.contact-item{
+    margin-bottom:20px;
+    color:var(--gray);
+}
+
+ 
+footer{
+    background:var(--dark);
+    color:#94a3b8;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+ 
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .hero-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:2.2rem;
+    }
+
+    section{
+        padding:60px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+ 
+<header>
+    <div class="logo">NayePankh Foundation</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#impact">Impact</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+ 
+<section id="home">
+    <div class="hero-container">
+
+        <div class="hero-text">
+            <h1>Giving <span style="color: #62cd3e;">Wings</span> to Underprivileged Dreams</h1>
+
+            <p>
+                We provide education, healthcare, and livelihood opportunities
+                to communities that need them most.
+            </p>
+
+            <a href="#programs" class="btn">
+                Explore Our Initiatives
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80"
+                 alt="Happy children learning">
+        </div>
+
+    </div>
+</section>
+
+
+<section id="about">
+    <h2 class="section-title">About Our Mission</h2>
+
+    <p>
+        NayePankh Foundation is a non-profit organization committed to
+        improving lives through education, healthcare, and skill development.
+        We believe everyone deserves the opportunity to build an independent
+        and dignified future.
+    </p>
+</section>
+
+ 
+<section id="programs">
+
+    <h2 class="section-title">Our Focus Areas</h2>
+
+    <div class="grid-container">
+
+        <div class="card">
+            <div class="card-img-holder">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=400&q=80"
+                     alt="Education">
+            </div>
+
+            <div class="card-content">
+                <h3>📚 Quality Education</h3>
+                <p>
+                    Providing learning kits and study support for children.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img-holder">
+                <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=400&q=80"
+                     alt="Healthcare">
+            </div>
+
+            <div class="card-content">
+                <h3>🏥 Health & Nutrition</h3>
+                <p>
+                    Conducting health checkups and nutrition drives.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img-holder">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80"
+                     alt="Mentorship">
+            </div>
+
+            <div class="card-content">
+                <h3>🌱 Youth Mentorship</h3>
+                <p>
+                    Providing vocational training and skill development.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+ 
+<section id="impact">
+
+    <div class="impact-panel">
+
+        <h2>Our Footprint So Far</h2>
+
+        <div class="stats-row">
+
+            <div class="stat-item">
+                <h3>5000+</h3>
+                <p>Lives Touched</p>
+            </div>
+
+            <div class="stat-item">
+                <h3>200+</h3>
+                <p>Volunteers Mobilized</p>
+            </div>
+
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Completed Drives</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contact">
+
+    <h2 class="section-title">Connect With Us</h2>
+
+    <div class="contact-box">
+
+        <div class="contact-item">
+            📧 <strong>Email:</strong> info@nayepankh.com
+        </div>
+
+        <div class="contact-item">
+            📞 <strong>Phone:</strong> +91 8318500748
+        </div>
+
+        <div class="contact-item">
+            📍 <strong>Location:</strong> Kanpur, Uttar Pradesh, India
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 NayePankh Foundation | Together We Can Make a Difference
+</footer>
+
+</body>
+</html>
+
